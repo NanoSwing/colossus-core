@@ -1,4 +1,4 @@
-NAME := lib
+NAME := colossuscore
 
 CC := cc
 CFLAGS := -std=c17 -fPIC
