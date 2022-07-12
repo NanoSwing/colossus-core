@@ -1,6 +1,6 @@
 #pragma once
 
-#include "defs.h"
+#include "core/defs.h"
 
 typedef enum {
     LOG_LEVEL_FATAL,
