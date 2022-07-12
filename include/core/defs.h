@@ -18,5 +18,5 @@ typedef char B8;
     #define true 1
 #endif
 #ifndef false
-    #define false 1
+    #define false 0
 #endif
