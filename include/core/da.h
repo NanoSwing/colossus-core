@@ -47,7 +47,7 @@ extern I64 da_count(const void *da);
  */
 #define da_push_at(da, index, data) ({\
         void *__da_output; \
-        typeof(data) __da_temp_data = data; \
+        __typeof(data) __da_temp_data = data; \
         __da_output = _da_push_at((void **) &da, index, &__da_temp_data);\
         __da_output; \
     })
@@ -61,7 +61,7 @@ extern I64 da_count(const void *da);
  * Returns:
  * The pushed item. 
  */
-#define da_push(da, data) da_push_at(da, daCount(da), data)
+#define da_push(da, data) da_push_at(da, da_count(da), data)
 
 /*
  * Pops an object at the specified index in the dynamic array.
