@@ -18,7 +18,7 @@ debug release: $(NAME)
 # Linking
 $(NAME): $(OBJ)
 	mkdir -p bin
-	ar -rcs -o bin/lib$(NAME).a $(OBJ)
+	ar rcs -o bin/lib$(NAME).a $(OBJ)
 
 .PHONY: clean
 
